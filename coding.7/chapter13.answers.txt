@@ -16,6 +16,36 @@ large amounts of memory?
 Answer:The memory usage totals are increased by the amount I allocated in the parameter while running the memory user
 program. For example, if I ran the memoray user program with 2000 memory, the memory usage shown by "free" program also 
 goes up. 
-When we kill the memory user 
+When we kill the memory user program, the used memory value goes down by the amount of memory that was allocated in the
+ parameter while running the memory-user program. The free memory also goes up by same amount, indicating that the memory 
+that was being used by the memory user program is now free.
+
+Yes, the numbers match my expectations
+
+When I tried to use a really high amount of memory, the OS kills the program. For example, there was about 7304 memory 
+available but I tried running about 8000 with the memory user program.The program got killed immediately.
+
+Question 7:. Now run pmap on some of these processes, using various flags (like
+-X) to reveal many details about the process. What do you see?
+How many different entities make up a modern address space, as
+opposed to our simple conception of code/stack/heap?
+
+
+Answer: When I ran the pmap commmad in different processes with a variety of flags, I observed that I could see the
+detailed information about memory mapping in that process. The different flags enabled seeing the same information in 
+different formats. For example, while -X shows more elaborate information, -d shows more compact information about the 
+memory usage. 
+
+In a modern computer's address space, there are typically more than just the simple divisions of code, stack, and heap. 
+For example, it can contain Code Segment, which includes the machine code instructions of the program's main executable
+ as well as any shared libraries or dynamically linked code. It can also contain a Data Segmen which includes
+ initialized global and static variables. Other examples are BSS (Block Started by Symbol),Memory-Mapped Files,
+Kernel Space etc. 
+
+
+
+
+
+Question 8:  
 
 
