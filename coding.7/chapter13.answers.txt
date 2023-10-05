@@ -43,9 +43,15 @@ For example, it can contain Code Segment, which includes the machine code instru
 Kernel Space etc. 
 
 
+Question 8: Finally, let's run pmap on your memory-user program, with different amounts of used memory. What do you see here? Does the
+output from pmap match your expectations?
 
-
-
-Question 8:  
+When I ran pmap on my memory-user program with varying amounts of used memory, I noticed that the output reflected
+ the memory allocation and deallocation patterns within my program. The pmap output aligned with my expectations,
+ showing different memory regions corresponding to various parts of my program's memory management.
+ It was interesting to see how the memory maps changed as I manipulated memory usage.
+ Therefore, the pmap utility provided valuable insights into how my program utilized memory,
+ helping me verify and fine-tune my memory management strategies.
+  
 
 
