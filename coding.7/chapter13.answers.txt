@@ -1,0 +1,21 @@
+Question 2. Now, run free, perhaps using some of the arguments that might
+ be useful (e.g., -m, to display memory totals in megabytes).
+ How much memory is in your system? How much is free? Do these numbers match
+ your intuition?
+
+Answer: After running the command "free -mù, the output states that my system 
+has 7960 total memory and 6907 is free.Yes, the numbers match my intuition. 
+
+Question 4. Now, while running your memory-user program, also (in a different terminal window, but on the same machine) run the free
+tool. How do the memory usage totals change when your program
+is running? How about when you kill the memory-user program?
+Do the numbers match your expectations? Try this for different
+amounts of memory usage. What happens when you use really
+large amounts of memory?
+ 
+Answer:The memory usage totals are increased by the amount I allocated in the parameter while running the memory user
+program. For example, if I ran the memoray user program with 2000 memory, the memory usage shown by "free" program also 
+goes up. 
+When we kill the memory user 
+
+
